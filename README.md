@@ -1,15 +1,25 @@
 # chiwalator
 
-To install dependencies:
+## install
+
+Clone the repo and run:
 
 ```bash
 bun install
 ```
 
-To run:
+## usage:
 
 ```bash
-bun run index.ts
+Usage: bun run src/index.ts [mode]
+Modes:
+  refresh                - Refresh word map from 7tv
+  translate [sentence]   - Setence you want to translate
 ```
 
-This project was created using `bun init` in bun v1.2.11. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## example
+```
+bun run src/index.ts translate this is bad
+# gets turned into:
+that are good
+```
