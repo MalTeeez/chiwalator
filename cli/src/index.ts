@@ -1,7 +1,7 @@
 import type { EmoteResponse } from './types';
 import { print_pretty, read_from_file, save_map_to_file } from './utils';
 
-const WORD_MAP_FILE = './word_map.json';
+const WORD_MAP_FILE = '../word_map.json';
 
 async function refresh() {
     const file_contents = await read_from_file(WORD_MAP_FILE);
