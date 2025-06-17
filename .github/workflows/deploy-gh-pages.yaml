@@ -31,7 +31,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web/dist/
+          path: dist/
 
   deploy:
     # Add a dependency to the build job
@@ -50,9 +50,6 @@ jobs:
     # Specify runner + deployment step
     runs-on: ubuntu-latest
     steps:
-      - name: debug
-        run: du -a /
-
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
