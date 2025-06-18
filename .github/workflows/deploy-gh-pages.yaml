@@ -28,10 +28,9 @@ jobs:
         run: bun run build
 
       - name: Upload static files as artifact
-        id: deployment
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
         with:
-          path: web/dist
+          path: ./web/dist
 
   deploy:
     # Add a dependency to the build job
@@ -52,5 +51,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
           
