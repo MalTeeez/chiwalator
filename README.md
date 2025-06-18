@@ -2,9 +2,10 @@
 
 ## install
 
-Clone the repo and run:
+To run via cli, clone the repo and run:
 
 ```bash
+cd cli
 bun install
 ```
 
